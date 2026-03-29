@@ -1,0 +1,7 @@
+node_modules/
+
+# Ignorar package-lock.json (recomendado)
+package-lock.json
+
+# O ignorar el package.json mismo (no recomendado)
+package.json
