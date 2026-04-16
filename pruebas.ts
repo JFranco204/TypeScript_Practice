@@ -162,3 +162,103 @@
 
 // let est = estadoSalud("Grave", false);
 // console.log(est);
+
+let intentos: number = 0;
+
+while (intentos < 3) {
+  console.log(`Intento número ${intentos + 1}`);
+  intentos++;
+}
+// → Intento número 1, 2, 3
+
+
+for ( let contar: number = 1; contar <= 10; contar++ ) {
+    console.log(`Tu conteo es: ${contar}`);
+}
+
+
+let note: number = 0;
+
+while ( note <= 10 ) {
+    console.log(`Tu nota es de: ${note}`);
+    note++;
+}
+
+
+let note1: number = 0;
+do {
+    console.log(`Tu jiji nota es de: ${note1}`);
+    note1++;
+} while ( note1 < 0 )
+
+
+
+for ( let i: number = 0; i < 10; i++ ) {
+    if ( i === 5 ) break;
+    console.log( `Conteo: ${i}` );
+}
+
+for ( let i: number = 0; i < 10; i++ ) {
+    if ( i === 5 ) continue;
+    console.log( `Conteo: ${i}` );
+}
+
+
+
+
+const frutas: string[] = ["mango", "papaya", "guanábana"];
+
+for (let i = 1; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}
+// → mango, papaya, guanábana
+
+
+//Con for: Imprime la tabla de multiplicar del 7, 
+//del 1 al 10. Formato: "7 x 1 = 7", "7 x 2 = 14", etc.
+
+for ( let i: number = 1; i <= 10; i++ ) {
+    console.log( ` 7 X ${i} = `, 7 * i );
+}
+
+const table: number = 7;
+
+for ( let i: number = 1; i<= 10; i++ ) {
+    console.log( table, " X ", i, " = ", table * i );
+}
+
+const table2: number = 7;
+
+for ( let i: number = 1; i<= 10; i++ ) {
+    console.log( table2 + " X " + i + " = " + table2 * i );
+}
+
+const table3: number = 7;
+
+for ( let i: number = 1; i<= 10; i++ ) {
+    console.log( `7 X ${i} = `, table2 * i );
+}
+
+//Con while: Pide imaginar que tienes una variable saldo que empieza en 100.
+//Cada vuelta del ciclo le restas 15. Imprime el saldo en cada vuelta hasta que sea menor a 15.
+//Al final imprime "Saldo insuficiente".
+
+let saldo: number = 100;
+
+while ( saldo >= 15 ) {
+    console.log( `Tu saldo es: ${saldo}` );
+    saldo -= 15;
+}
+
+console.log("Saldo insuficiente");
+
+
+//Con do while: Crea un contador que empiece en 1 y se duplique cada vuelta
+//(contador = contador * 2).
+//Imprime cada valor hasta que supere 100.
+
+//let 
+
+//do {
+
+//} while (  )
