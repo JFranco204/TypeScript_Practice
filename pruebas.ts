@@ -142,23 +142,23 @@
 //     return "Estado desconocido";
 // }
 
-function estadoSalud(estado: string, viviras: boolean): string {
-    if (estado === "Grave") {
-        return viviras ? "Sobreviviste de milagro" : "Te vas a morir";
-    }
+// function estadoSalud(estado: string, viviras: boolean): string {
+//     if (estado === "Grave") {
+//         return viviras ? "Sobreviviste de milagro" : "Te vas a morir";
+//     }
 
-    if (estado === "Medianamente") {
-        return viviras ? "Te salvaste por poco" : "Tal vez te mueras";
-    }
+//     if (estado === "Medianamente") {
+//         return viviras ? "Te salvaste por poco" : "Tal vez te mueras";
+//     }
 
-    if (estado === "Bien") {
-        return viviras ? "Te salvaste rata" : "Algo salió mal";
-    }
+//     if (estado === "Bien") {
+//         return viviras ? "Te salvaste rata" : "Algo salió mal";
+//     }
 
-    return "Estado desconocido";
-}
+//     return "Estado desconocido";
+// }
 
 // estadoSalud("Grave", true);
 
-let est = estadoSalud("Grave", false);
-console.log(est);
+// let est = estadoSalud("Grave", false);
+// console.log(est);
