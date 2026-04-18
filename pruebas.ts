@@ -224,7 +224,7 @@ for ( let i: number = 1; i <= 10; i++ ) {
 const table: number = 7;
 
 for ( let i: number = 1; i<= 10; i++ ) {
-    console.log( table, " X ", i, " = ", table * i );
+    console.log(`${table} X ${i} = ${table * i}`); // FORMA CORRECTA 
 }
 
 const table2: number = 7;
@@ -257,8 +257,9 @@ console.log("Saldo insuficiente");
 //(contador = contador * 2).
 //Imprime cada valor hasta que supere 100.
 
-//let 
+let count: number = 1;
 
-//do {
-
-//} while (  )
+do {
+    console.log( `Tu numero es: ${count}` );
+    count *= 2;
+} while ( count <= 100 )
