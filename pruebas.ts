@@ -163,103 +163,145 @@
 // let est = estadoSalud("Grave", false);
 // console.log(est);
 
-let intentos: number = 0;
+// let intentos: number = 0;
 
-while (intentos < 3) {
-  console.log(`Intento número ${intentos + 1}`);
-  intentos++;
-}
+// while (intentos < 3) {
+//   console.log(`Intento número ${intentos + 1}`);
+//   intentos++;
+// }
 // → Intento número 1, 2, 3
 
 
-for ( let contar: number = 1; contar <= 10; contar++ ) {
-    console.log(`Tu conteo es: ${contar}`);
-}
+// for ( let contar: number = 1; contar <= 10; contar++ ) {
+//     console.log(`Tu conteo es: ${contar}`);
+// }
 
 
-let note: number = 0;
+// let note: number = 0;
 
-while ( note <= 10 ) {
-    console.log(`Tu nota es de: ${note}`);
-    note++;
-}
-
-
-let note1: number = 0;
-do {
-    console.log(`Tu jiji nota es de: ${note1}`);
-    note1++;
-} while ( note1 < 0 )
+// while ( note <= 10 ) {
+//     console.log(`Tu nota es de: ${note}`);
+//     note++;
+// }
 
 
-
-for ( let i: number = 0; i < 10; i++ ) {
-    if ( i === 5 ) break;
-    console.log( `Conteo: ${i}` );
-}
-
-for ( let i: number = 0; i < 10; i++ ) {
-    if ( i === 5 ) continue;
-    console.log( `Conteo: ${i}` );
-}
+// let note1: number = 0;
+// do {
+//     console.log(`Tu jiji nota es de: ${note1}`);
+//     note1++;
+// } while ( note1 < 0 )
 
 
 
+// for ( let i: number = 0; i < 10; i++ ) {
+//     if ( i === 5 ) break;
+//     console.log( `Conteo: ${i}` );
+// }
 
-const frutas: string[] = ["mango", "papaya", "guanábana"];
+// for ( let i: number = 0; i < 10; i++ ) {
+//     if ( i === 5 ) continue;
+//     console.log( `Conteo: ${i}` );
+// }
 
-for (let i = 1; i < frutas.length; i++) {
-  console.log(frutas[i]);
-}
+
+
+
+// const frutas: string[] = ["mango", "papaya", "guanábana"];
+
+// for (let i = 1; i < frutas.length; i++) {
+//   console.log(frutas[i]);
+// }
 // → mango, papaya, guanábana
 
 
 //Con for: Imprime la tabla de multiplicar del 7, 
 //del 1 al 10. Formato: "7 x 1 = 7", "7 x 2 = 14", etc.
 
-for ( let i: number = 1; i <= 10; i++ ) {
-    console.log( ` 7 X ${i} = `, 7 * i );
-}
+// for ( let i: number = 1; i <= 10; i++ ) {
+//     console.log( ` 7 X ${i} = `, 7 * i );
+// }
 
-const table: number = 7;
+// const table: number = 7;
 
-for ( let i: number = 1; i<= 10; i++ ) {
-    console.log(`${table} X ${i} = ${table * i}`); // FORMA CORRECTA 
-}
+// for ( let i: number = 1; i<= 10; i++ ) {
+//     console.log(`${table} X ${i} = ${table * i}`); // FORMA CORRECTA 
+// }
 
-const table2: number = 7;
+// const table2: number = 7;
 
-for ( let i: number = 1; i<= 10; i++ ) {
-    console.log( table2 + " X " + i + " = " + table2 * i );
-}
+// for ( let i: number = 1; i<= 10; i++ ) {
+//     console.log( table2 + " X " + i + " = " + table2 * i );
+// }
 
-const table3: number = 7;
+// const table3: number = 7;
 
-for ( let i: number = 1; i<= 10; i++ ) {
-    console.log( `7 X ${i} = `, table2 * i );
-}
+// for ( let i: number = 1; i<= 10; i++ ) {
+//     console.log( `7 X ${i} = `, table3 * i );
+// }
 
 //Con while: Pide imaginar que tienes una variable saldo que empieza en 100.
 //Cada vuelta del ciclo le restas 15. Imprime el saldo en cada vuelta hasta que sea menor a 15.
 //Al final imprime "Saldo insuficiente".
 
-let saldo: number = 100;
+// let saldo: number = 100;
 
-while ( saldo >= 15 ) {
-    console.log( `Tu saldo es: ${saldo}` );
-    saldo -= 15;
-}
+// while ( saldo >= 15 ) {
+//     console.log( `Tu saldo es: ${saldo}` );
+//     saldo -= 15;
+// }
 
-console.log("Saldo insuficiente");
+// console.log("Saldo insuficiente");
 
 
 //Con do while: Crea un contador que empiece en 1 y se duplique cada vuelta
 //(contador = contador * 2).
 //Imprime cada valor hasta que supere 100.
 
-let count: number = 1;
+// let count: number = 1;
 
-do {
-    console.log( `Tu numero es: ${count}` );
-    count *= 2;
-} while ( count <= 100 )
+// do {
+//     console.log( `Tu numero es: ${count}` );
+//     count *= 2;
+// } while ( count <= 100 )
+
+// Recorderis de funciones
+// function sumar( a: number, b: number = 10 ): number {
+//     return a + b;
+// }
+
+// let resultado: number = sumar(10);
+// console.log(resultado);
+
+
+// console.log(sumar(20,10));
+
+
+
+
+
+// EJERCICIO - FUNCIONES
+
+//Primera: Escribe una función esPar que reciba un número y retorne true si es par o false si es impar. 
+// Pista: un número es par cuando el residuo de dividirlo entre 2 es cero (n % 2 === 0).
+
+
+function esPar( valor: number ): string {
+    if( valor < 0 ) return "Numero invalido";
+    if( (valor % 2) === 0) return "Es par";
+    return "Es impar";
+}
+
+let identificacion: string = esPar( 3 );
+console.log( `Tu numero es ${identificacion}` );
+
+
+//Segunda: Escribe una función calcularDescuento que reciba el precio original y el porcentaje de descuento,
+//  y retorne el precio final después del descuento. 
+// Por ejemplo: calcularDescuento(100000, 15) debería retornar 85000.
+
+function calcularDescuento( precio: number, descuento: number ): number {
+    return precio - ( precio * ( descuento / 100) );
+}
+
+let descuentoCalculado: number = calcularDescuento(1000,10);
+console.log( `Tu precio final con descuento es de: ${descuentoCalculado}` )
