@@ -304,4 +304,23 @@ function calcularDescuento( precio: number, descuento: number ): number {
 }
 
 let descuentoCalculado: number = calcularDescuento(1000,10);
-console.log( `Tu precio final con descuento es de: ${descuentoCalculado}` )
+console.log( `Tu precio final con descuento es de: ${descuentoCalculado}` );
+
+
+// Tercera: Escribe una función contarVocales que reciba un string y retorne cuántas vocales tiene.
+// Por ejemplo: contarVocales("Bucaramanga") debería retornar 5.
+// Pista: puedes recorrer el string con un for igual que un arreglo, usando palabra[i].
+
+function contarVocales( vocal: string ): number {
+    let contador: number = 0;
+
+    for( let i = 0; i < vocal.length; i++ ) {
+        let letra = vocal[i]
+        if(vocal.includes(i)) {
+            console.log(`Vocal encontrada ${contador}`);
+        }
+    } return contador;
+}
+
+let resultado = contarVocales("Bucaramanga");
+console.log( `Tus vocales son: ${resultado}` );
