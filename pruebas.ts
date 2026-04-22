@@ -285,13 +285,12 @@
 // Pista: un número es par cuando el residuo de dividirlo entre 2 es cero (n % 2 === 0).
 
 
-function esPar( valor: number ): string {
-    if( valor < 0 ) return "Numero invalido";
-    if( (valor % 2) === 0) return "Es par";
-    return "Es impar";
+function esPar(valor: number): boolean {
+  if (valor < 0) return false;
+  return valor % 2 === 0;
 }
 
-let identificacion: string = esPar( 3 );
+let identificacion = esPar( 3 );
 console.log( `Tu numero es ${identificacion}` );
 
 
@@ -311,16 +310,66 @@ console.log( `Tu precio final con descuento es de: ${descuentoCalculado}` );
 // Por ejemplo: contarVocales("Bucaramanga") debería retornar 5.
 // Pista: puedes recorrer el string con un for igual que un arreglo, usando palabra[i].
 
-function contarVocales( vocal: string ): number {
+function contarVocales(vocal: string): number {
     let contador: number = 0;
 
-    for( let i = 0; i < vocal.length; i++ ) {
-        let letra = vocal[i]
-        if(vocal.includes(i)) {
-            console.log(`Vocal encontrada ${contador}`);
+    for (let i = 0; i < vocal.length; i++) {
+        let letra = vocal[i];
+
+        if ("aeiou".includes(letra)) {
+            contador++;
         }
-    } return contador;
+    }
+
+    return contador;
 }
 
 let resultado = contarVocales("Bucaramanga");
-console.log( `Tus vocales son: ${resultado}` );
+console.log(`Tus vocales son: ${resultado}`);
+
+
+
+
+function contarLetras( texto: string, letra: string ): number {
+
+    let contador2 = 0
+
+    for( let i = 0; i < texto.length; i++ ) {
+        let recorrido = texto[i]
+        if ( letra === recorrido) {
+            contador2++;
+        }
+    }
+    return contador2;
+}
+
+let resultado2 = contarLetras("joamani", "a");
+console.log( `Tu palabra tiene ${resultado2} letras identicas` );
+
+
+
+
+
+
+// EJERCICIO - ARREGLOS
+
+//Escribe el código (sin funciones, solo con ciclos y condicionales) que calcule e imprima:
+
+//La temperatura más alta
+//La temperatura más baja
+//El promedio de todas las temperaturas
+//Cuántos días superaron los 22 grados
+
+const temperaturas: number[] = [18, 23, 15, 27, 22, 19, 30, 14, 25, 21];
+
+let contador = temperaturas[0];
+for( let i = 0; i < temperaturas.length; i++ ) {
+    if( temperaturas[i] > contador ) {
+        contador = temperaturas[i];
+        console.log( `La temperatura mas alta es: ${contador}` );
+    }
+    if( temperaturas[i] < contador ) {
+        contador = temperaturas[i];
+        console.log( `La temperatura mas baja es: ${contador}` );
+    }
+}
