@@ -362,14 +362,101 @@ console.log( `Tu palabra tiene ${resultado2} letras identicas` );
 
 const temperaturas: number[] = [18, 23, 15, 27, 22, 19, 30, 14, 25, 21];
 
-let contador = temperaturas[0];
-for( let i = 0; i < temperaturas.length; i++ ) {
-    if( temperaturas[i] > contador ) {
-        contador = temperaturas[i];
-        console.log( `La temperatura mas alta es: ${contador}` );
+// Una variable por cada cosa que quieres rastrear
+let mayor: number = temperaturas[0];
+let menor: number = temperaturas[0];
+let suma: number = 0;
+let diasCalurosos: number = 0;
+
+for (let i = 0; i < temperaturas.length; i++) {
+    
+    // ¿Este es mayor que el mayor actual?
+    if (temperaturas[i] > mayor) {
+        mayor = temperaturas[i];
     }
-    if( temperaturas[i] < contador ) {
-        contador = temperaturas[i];
-        console.log( `La temperatura mas baja es: ${contador}` );
+    
+    // ¿Este es menor que el menor actual?
+    if (temperaturas[i] < menor) {
+        menor = temperaturas[i];
+    }
+    
+    // Acumulamos para el promedio
+    suma = suma + temperaturas[i];
+    
+    // ¿Superó 22?
+    if (temperaturas[i] > 22) {
+        diasCalurosos++;
     }
 }
+
+// El promedio se calcula DESPUÉS del ciclo, no dentro
+let promedio: number = suma / temperaturas.length;
+
+console.log(`Temperatura más alta: ${mayor}`);
+console.log(`Temperatura más baja: ${menor}`);
+console.log(`Promedio: ${promedio}`);
+console.log(`Días sobre 22°: ${diasCalurosos}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const edades: number[] = [17, 34, 25, 15, 42, 28, 19, 55, 31, 22];
+
+let masAlta: number = edades[0];
+let masBaja: number = edades[0];
+let conteoPersonas: number = 0;
+let sumaEdades: number = 0;
+
+for ( let i = 0; i < edades.length; i++ ) {
+
+    if ( edades[i] > masAlta ){
+        masAlta = edades[i];
+    }
+
+    if ( edades[i] < masBaja ) {
+        masBaja = edades[i];
+    }
+
+    if ( edades[i] >= 18 ) {
+        conteoPersonas++;
+    }
+
+    sumaEdades = sumaEdades + edades[i]
+}
+
+let promedio2: number = sumaEdades / edades.length;
+
+console.log(`La edad mas alta es: ${masAlta}`);
+console.log(`La edad mas baja es: ${masBaja}`);
+console.log(`Personas mayores a 18 años: ${conteoPersonas}`);
+console.log(`Promedio de edades: ${promedio2}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
