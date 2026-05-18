@@ -93,7 +93,7 @@ switch (dia) {
 // for 
 
 // for (inicio; condición; actualización)
-for (let i = 0; i < 5; i++) {
+for (let i = 0;   i < 5; i++) {
   console.log(i);
 }
 // → 0, 1, 2, 3, 4
@@ -156,7 +156,7 @@ do {
 // console.log(acceso);
 
 
-// let tamañoMiPene: number = 17;
+// let tamañoMiPene: number = 85;
 
 // if (tamañoMiPene >= 20) {
 //     console.log('Severo titan');
