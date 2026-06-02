@@ -67,4 +67,4 @@ console.log(`Tu descuento es del 5%: ${ precio * (1 - 5 / 100) }`);
 
 //Me quedo haciendo falta hacer que la variable let que debo crear para los porcentajes, se acutalice,
 //Ya se como se hace esa cosa, dentro del IF es poner descuento = 5 cuando cumpla tal condicion, así
-//se actualiza el valor dentro de esta
+//se actualiza el valor dentro de esta.
