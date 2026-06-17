@@ -46,25 +46,20 @@ console.log(`Hay Stock del producto? ${stock&& amount > 5}`);
 
 
 let precio: number = 30000;
+let descuento: number = 0;
 
  if ( precio >= 50000 && precio <= 99999 ) {
-    const descuento1: number = 5;
-    console.log(`Este producto aplica para un descuento del ${descuento1}%, quedaria en: ${precio * (1 - descuento1 / 100) }`);
+    descuento = 5;
 } else if ( precio >= 100000 && precio <= 199999 ) {
-    const descuento2: number = 10;
-    console.log(`Este producto aplica para un descuento del ${descuento2}%, quedaria en: ${ precio * (1 - descuento2 / 100) }`);
-} else if ( precio > 200000 ) {
-    const descuento3: number = 15;
-    console.log(`Este producto aplica para un descuento del ${descuento3}%, quedaria en: ${ precio * (1 - descuento3 / 100) }`);
+    descuento = 10;
+} else if ( precio >= 200000 ) {
+    descuento = 15;
 } else {
     console.log(`Este producto no aplica para un descuento`);
 }
 
+console.log(`Este producto aplica para un descuento del ${descuento}%, quedaria en: ${ precio * (1 - descuento / 100) }`);
+
 //Ejemplo de como se puede hacer el calculo del IVA en consola sin necesidad de una variabla const
 console.log(`Tu descuento es del 5%: ${ precio * (1 - 5 / 100) }`);
 console.log(`Tu descuento es del 5%: ${ precio * (1 - 5 / 100) }`);
-
-
-//Me quedo haciendo falta hacer que la variable let que debo crear para los porcentajes, se acutalice,
-//Ya se como se hace esa cosa, dentro del IF es poner descuento = 5 cuando cumpla tal condicion, así
-//se actualiza el valor dentro de esta.
