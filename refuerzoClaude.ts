@@ -4,7 +4,7 @@
 //console.log(persona[2]);
 //console.log(flowers[1]);
 
-
+console.log(`==================1====================`);
 let nameProduct: string = "Audifonos";
 let price: number = 150000;
 let stock: boolean = true;
@@ -44,8 +44,9 @@ if ( stock &&  amount > 5 ) {
 console.log(`Tu precio con IVA es mayor a 200.000?. Mi precio total es de ${price * porcentajeIVA}`);
 console.log(`Hay Stock del producto? ${stock&& amount > 5}`);
 
+console.log(`===================2===================`);
 
-let precio: number = 30000;
+let precio: number = 80000;
 let descuento: number = 0;
 
  if ( precio >= 50000 && precio <= 99999 ) {
@@ -57,9 +58,10 @@ let descuento: number = 0;
 } else {
     console.log(`Este producto no aplica para un descuento`);
 }
-
 console.log(`Este producto aplica para un descuento del ${descuento}%, quedaria en: ${ precio * (1 - descuento / 100) }`);
 
+
+console.log(`===================3===================`);
+
 //Ejemplo de como se puede hacer el calculo del IVA en consola sin necesidad de una variabla const
-console.log(`Tu descuento es del 5%: ${ precio * (1 - 5 / 100) }`);
 console.log(`Tu descuento es del 5%: ${ precio * (1 - 5 / 100) }`);
