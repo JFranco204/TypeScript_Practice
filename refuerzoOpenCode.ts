@@ -49,7 +49,7 @@ console.log(`
 
 //FASE 2
 
-//Ejercicio 3
+//Ejercicio 1
 
 let calificacion:number = 150;
 let letra: string = "";
@@ -89,5 +89,27 @@ if ( letra === "" ) {
 }else {
     console.log(`Tu nota es ${letra}, ${mensaje}`);
 }
+
+//Ejercicio 2
+
+console.log(`Acceso a Evento VIP`);
+
+let nombre:string = "Franco";
+let edad:number = 15;
+let tieneCredencialVIP: boolean = true;
+let esInvitadoEspecial: boolean = false;
+
+if ( edad >= 18) {
+    if ( tieneCredencialVIP ) {
+        console.log(`Acceso permitido a la zona VIP.`);
+    }
+} else if ( edad < 18 ) {
+        if ( esInvitadoEspecial ) {
+            console.log(`Acceso permitido a la zona VIP.`);
+        }
+} else {
+    console.log(`Acceso denegado.`);
+}
+
 
 
