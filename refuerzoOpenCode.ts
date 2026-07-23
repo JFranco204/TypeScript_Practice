@@ -162,7 +162,7 @@ for (let i:number = 1; i <= limite; i++) {
 }
 
 //EJERCICIO 2
-console.log(`CUENTA REGRESICA PARA DESPQUEGUE CON "WHILE"`);
+console.log(`CUENTA REGRESICA PARA DESPEGUE CON "WHILE"`);
 
 let inicio: number = 10;
 
@@ -227,3 +227,52 @@ let saludo: string = saludar('Franco');
 //let action: string = saludar('Franco');
 
 console.log(`${saludo}`);
+
+
+
+// EJERCICIO 2: Función con Parámetros y Retorno (Calculadora)
+
+// 1. Crea una función llamada sumar que reciba dos parámetros: a (number) y b (number).
+// 2. La función debe retornar la suma de ambos números.
+// 3. Crea otra función llamada multiplicar que reciba los mismos parámetros y retorne el producto.
+// 4. Llama a ambas funciones y guarda los resultados en variables, luego imprímelos.
+console.log(`#####################################`);
+
+function sumar(a:number, b:number): number {
+    return a + b;
+}
+
+function multiplicar(a:number, b:number): number {
+    return a * b;
+}
+
+let suma:number = sumar(1,2);
+let multiplicacion:number = multiplicar(1,2);
+
+console.log(`Suma: ${suma}`);
+console.log(`Multiplicación: ${multiplicacion}`);
+
+const division = (a:number, b:number): number => {
+    return a / b;
+}
+
+let divi:number = division(10,2);
+console.log(`Division: ${divi}`);
+
+console.log(`#####################################`);
+
+
+// EJERCICIO 3: Funciones de Flecha (Arrow Functions)
+// 1. Crea una función de flecha llamada esPar que reciba un número y retorne true si es par y false si no lo es.
+// 2. Úsala dentro de un ciclo for para evaluar números del 1 al 10 y mostrar por consola: "El número [x] es par: [true/false]".
+
+
+console.log(4 % 2);
+console.log(5 % 2);
+console.log(8 % 2);
+console.log(9 % 2);
+console.log(9 % 2);
+
+// const esPar = (valor:number): boolean => {
+    
+// }
