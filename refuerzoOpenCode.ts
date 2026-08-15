@@ -201,6 +201,7 @@ console.log(`Divide: ${total4}`);
 console.log(`#####################################`);
 
 import { printMultiplication } from './sections/jejej'
+import { multiplicationTable } from './helpers/multipliactionTablePrueba';
 
 printMultiplication(10,20);
 
@@ -266,13 +267,18 @@ console.log(`#####################################`);
 // 1. Crea una función de flecha llamada esPar que reciba un número y retorne true si es par y false si no lo es.
 // 2. Úsala dentro de un ciclo for para evaluar números del 1 al 10 y mostrar por consola: "El número [x] es par: [true/false]".
 
+const esPar1 = (valor:number):boolean => {
+    return valor % 2 === 0;
+}
 
-console.log(4 % 2);
-console.log(5 % 2);
-console.log(8 % 2);
-console.log(9 % 2);
-console.log(9 % 2);
+const esPar2 = (valor:number):boolean => valor % 2 === 0;
+let jijiji:boolean = esPar2(2);
+console.log(`${jijiji}`);
 
-// const esPar = (valor:number): boolean => {
-    
-// }
+// let resultado: boolean = esPar1(8);
+// console.log(`Tu numero es: ${resultado}`);
+
+for(let i:number = 0; i <= 10; i++) {
+    let resultado:boolean = esPar1(i);
+    console.log(`Tu numero ${i} es par:${resultado}`);
+}
