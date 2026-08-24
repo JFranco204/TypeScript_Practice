@@ -1,17 +1,16 @@
-import { countAge } from './helpers/helperPrueba';
-import { printLineNumber } from './sections/section-2';
-let person = {
-    name: 'Franco',
-    age: 22,
-    isActive: true,
-    hobbies: ['Programing', 'Play video games', 'Socialize'],
-    toString ( printAll: boolean ) {
-        let stringMessage = this.name + ' ' + this.age + ' ' + this.hobbies[2];
-        console.log(stringMessage.toUpperCase());
-    }
-}
+// Objeto literal
+// let person = {
+//     name: 'Franco',
+//     age: 22,
+//     isActive: true,
+//     hobbies: ['Programing', 'Play video games', 'Socialize'],
+//     toString ( printAll: boolean ) {
+//         let stringMessage = this.name + ' ' + this.age + ' ' + this.hobbies[2];
+//         console.log(stringMessage.toUpperCase());
+//     }
+// } 
 
-// person.toString(false);
+// // person.toString(false);
 
 
 let car = {
@@ -75,3 +74,29 @@ for ( let i: number = 0; i < people.length; i++ ) {
     let person = people[i];
     console.log(person.name + ' ' + person.age);
 }
+
+
+// Ejercicio para entender las clases y constructores + metodos
+class producto {
+    nombre1: string;
+    precio: number;
+    cantidad: number;
+
+    constructor(nombre:string, precio:number, cantidad:number) {
+        this.nombre1 = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
+    }
+
+    mostrarInformacion(): void {
+        console.log(`Producto: ${this.nombre1}
+Precio: ${this.precio}
+Cantidad: ${this.cantidad}`);
+    }
+}
+
+const producto1 = new producto("Teclado", 500, 2);
+const producto2 = new producto("Audifonos", 250, 5);
+
+producto1.mostrarInformacion();
+producto2.mostrarInformacion();
