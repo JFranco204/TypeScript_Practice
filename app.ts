@@ -19,19 +19,24 @@
 
         turnON() {
 
-            if ( this.isRunning) {
+            if ( this.isRunning ) {
                 console.log('El carro ya estaba encendido.... se daó el motor');
                 return;
             }
 
-            if(this.fuelTank <= 0) {
+            if( this.fuelTank <= 0 ) {
                 console.log('El carro no tiene gasolian');
                 return;
             }
 
             this.isRunning = true;
             console.log('El carro esta encendido');
+        }
 
+        fillTank( gas: number ) {
+            if ( gas  ) {
+
+            }
         }
  }
 
