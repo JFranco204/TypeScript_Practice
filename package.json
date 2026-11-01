@@ -2,10 +2,10 @@
   "name": "progra-101",
   "version": "1.0.0",
   "description": "",
-  "main": "app.ts",
+  "main": "section3-course.ts",
   "scripts": {
-    "dev": "ts-node app.ts",
-    "dev:watch": "nodemon --watch ./ --ext ts --exec ts-node app.ts"
+    "dev": "ts-node section3-course.ts",
+    "dev:watch": "nodemon --watch ./ --ext ts --exec ts-node section3-course.ts"
   },
   "author": "",
   "license": "ISC",
