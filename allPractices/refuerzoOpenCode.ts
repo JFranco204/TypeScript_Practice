@@ -179,10 +179,10 @@ while (inicio >= 0) {
 console.log(`#### CONTINUACION DEL CURSO COMO TAL`);
 
 
-import { addTwoNumbers12 } from './sections/jejej'
-import { substractTwoNumbers12 } from './sections/jejej'
-import { timesTwoNumbers12 } from './sections/jejej'
-import { divideTwoNumbers12 } from './sections/jejej'
+import { addTwoNumbers12 } from '../sections/jejej'
+import { substractTwoNumbers12 } from '../sections/jejej'
+import { timesTwoNumbers12 } from '../sections/jejej'
+import { divideTwoNumbers12 } from '../sections/jejej'
 
 let num1: number = 10;
 let num2: number = 10;
@@ -200,8 +200,8 @@ console.log(`Divide: ${total4}`);
 
 console.log(`#####################################`);
 
-import { printMultiplication } from './sections/jejej'
-import { multiplicationTable } from './helpers/multipliactionTablePrueba';
+import { printMultiplication } from '../sections/jejej'
+import { multiplicationTable } from '../helpers/multipliactionTablePrueba';
 
 printMultiplication(10,20);
 
