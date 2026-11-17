@@ -5,7 +5,7 @@
   "main": "app.ts",
   "scripts": {
     "dev": "ts-node section3-course.ts",
-    "dev:watch": "nodemon --watch ./ --ext ts --exec ts-node section5-POO.ts"
+    "dev:watch": "nodemon --watch ./ --ext ts --exec ts-node app.ts"
   },
   "author": "",
   "license": "ISC",
