@@ -1,4 +1,4 @@
-import { person } from "./sections/object-literal";
+import { person } from "../sections/object-literal";
 // PROGRAMACION ORIENTADA A OBJETOS (POO)
 
 // La programacion orientada a objetos es basicamente la suposicion abstracta sobre cosas que existen en la vida real
@@ -7,12 +7,13 @@ import { person } from "./sections/object-literal";
 
 // TEMAS PUNTUALES:
 
-// Objetos literales
+// 1. Objetos literales: Que son basicamente una variable con nombre donde dentro de {} lleva sus propiedades y valores.
+// a estos tipos de objetos se les puede crear una INTERFACE que es basicamente definir los tipos de datos de cada uno de las propiedades que llevaran los objetos literales, eso si teniendo en cuenta que hay que conocer las propiedades, ya no se usaria algo como let persona = {} sino let persona: Persona = {}
 
-// Clases
-//  |__ Niveles de acceso
-//    |__ Constructores
-//      |__ Creacion de instancias
+// 2. Clases
+//     |__ Niveles de acceso    (Private, public, readonly, static)
+//       |__ Constructores       (Es la estructura que se le va a dar a la nueva instancia)
+//         |__ Creacion de instancias (La instancia es cuando usamos la estructura de la clase y creamos algo con new)
 
 // (A) OBJETOS LITERALES
 
@@ -122,13 +123,13 @@ for (let i = 0; i <= personas.length - 1; i++) {
 
 class Motocicleta {
 
-    // private -> Solo se puede usar dentro de un metood de la clase 
+    // private -> Solo se puede usar dentro de un metodo de la clase
     // public -> Consultable y Editable
     // readonly -> Consultable
     // static -> Se añade dentro de la clase como una propiedad nueva y se consulta desde afuera de clase invocando la clase y luego la nueva propiedad: Motocicleta.newMotorcicle // Aunque tambien sirve para las propiedades y metodos que ya existen, solo que se requiere llamar a la clase primero para ser visibles
 
 
-    // readonly -> Solo sirve para las propiedades y la unica forma de actulizar los valores de esas propiedades es en el constructor
+    // readonly -> Solo sirve para las propiedades y la unica forma de actualizar los valores de esas propiedades es en el constructor
 
   static newMotorcicle = 'Motico'
   public readonly brand: string;
@@ -136,7 +137,7 @@ class Motocicleta {
   public isRunning: boolean;
   public type: string;
   public color: string;
-  public cc: number;
+  public cilindraje: number;
 
   public readonly createdAt: number;
 
@@ -145,8 +146,8 @@ class Motocicleta {
     this.fuelThank = 0;
     this.isRunning = false;
     this.type = type;
-    this.color = "Negro";
-    this.cc = 600;
+    this.color = "Negrp";
+    this.cilindraje = 600;
 
     this.createdAt = 20261102;
   }
@@ -183,12 +184,11 @@ class Motocicleta {
 }
 
 let myMotorcicle = new Motocicleta('Honda', 'Chopper'); // Argumentos para el constructor, esto sirve para no crear instancias iguales, ya que al ser todo heredado se pueden crear 100 motos con las mismas propiedades, con esto podemos determinar los datos diferenciadores
-
-myMotorcicle.brand; // public readonly
+console.log(myMotorcicle.type);
+console.log(myMotorcicle.brand); // public readonly
 console.log(Motocicleta.newMotorcicle); // static
 
 // myMotorcicle.fillTank(50);
 // myMotorcicle.fillTank(20);
 // myMotorcicle.turnOn();
 // console.log(myMotorcicle);
-

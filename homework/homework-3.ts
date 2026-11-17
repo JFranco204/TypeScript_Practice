@@ -1,5 +1,6 @@
 export let base: number = 10;
-let heigth: number = 5;
-const area: number = (base * heigth) / 2;
+let height: number = 5;
 
-console.log(`El area de un triangulo es: ${area}`);
+const area: number = (base * height) / 2;
+
+console.log('El area del triangulo es de: ', area);

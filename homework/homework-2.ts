@@ -1,4 +1,4 @@
-export let kilometros: number = 10;
-const millas: number = kilometros * 0.62;
+export let kms: number = 10;
+let miles: number = kms * 0.62;
 
-console.log(`${kilometros} kilometros es igual a millas: ${millas} `);
+console.log(kms, 'Kilometros es igual a millas: ', miles);
